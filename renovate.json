@@ -4,7 +4,7 @@
     {
       "matchPackagePatterns": ["^symfony/"],
       "groupName": "symfony packages",
-      "schedule": ["weekly"]
+      "schedule": ["before 16pm every day"]
     },
     {
       "matchPackagePatterns": ["^phpunit/phpunit"],
