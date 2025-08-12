@@ -1,0 +1,18 @@
+{
+  "extends": ["config:recommended"],
+  "packageRules": [
+    {
+      "matchPackagePatterns": ["^symfony/"],
+      "groupName": "symfony packages",
+      "schedule": ["weekly"]
+    },
+    {
+      "matchPackagePatterns": ["^phpunit/phpunit"],
+      "groupName": "testing",
+      "schedule": ["monthly"]
+    }
+  ],
+  "timezone": "Europe/Berlin",
+  "labels": ["dependencies"],
+  "commitMessagePrefix": "chore(deps):"
+}
