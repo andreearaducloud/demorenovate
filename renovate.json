@@ -1,10 +1,11 @@
 {
   "extends": ["config:recommended"],
+  "masterIssue": true,
   "packageRules": [
     {
       "matchPackagePatterns": ["^symfony/"],
       "groupName": "symfony packages",
-      "schedule": ["before 16pm every day"]
+      "schedule": ["before 4pm every day"]
     },
     {
       "matchPackagePatterns": ["^phpunit/phpunit"],
