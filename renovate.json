@@ -5,7 +5,9 @@
     {
       "matchPackagePatterns": ["^symfony/"],
       "groupName": "symfony packages",
-      "schedule": ["before 4pm every day"]
+      "schedule": ["before 4pm every day"],
+      "matchManagers": ["composer"],
+      "rangeStrategy": "update-lockfile"
     },
     {
       "matchPackagePatterns": ["^phpunit/phpunit"],
