@@ -1,21 +1,35 @@
 {
-  "extends": ["config:recommended"],
-  "masterIssue": true,
+  "extends": [
+    "config:recommended"
+  ],
+  "dependencyDashboard": true,
   "packageRules": [
     {
-      "matchPackagePatterns": ["^symfony/"],
       "groupName": "symfony packages",
-      "schedule": ["before 4pm every day"],
-      "matchManagers": ["composer"],
-      "rangeStrategy": "update-lockfile"
+      "schedule": [
+        "before 4pm"
+      ],
+      "matchManagers": [
+        "composer"
+      ],
+      "rangeStrategy": "update-lockfile",
+      "matchPackageNames": [
+        "/^symfony//"
+      ]
     },
     {
-      "matchPackagePatterns": ["^phpunit/phpunit"],
       "groupName": "testing",
-      "schedule": ["monthly"]
+      "schedule": [
+        "monthly"
+      ],
+      "matchPackageNames": [
+        "/^phpunit/phpunit/"
+      ]
     }
   ],
   "timezone": "Europe/Berlin",
-  "labels": ["dependencies"],
+  "labels": [
+    "dependencies"
+  ],
   "commitMessagePrefix": "chore(deps):"
 }
